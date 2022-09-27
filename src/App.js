@@ -1,23 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import './variables.scss'
+import {Header} from "./components/Header/Header";
+import {Footer} from "./components/Footer/Footer";
+import {Routes, Route} from "react-router-dom";
+import {LoginPage} from "./pages/LoginPage/LoginPage";
+import {useEffect} from "react";
+import { useNavigate } from 'react-router-dom';
+import {ResetPasswordPage} from "./pages/ResetPasswordPage/ResetPasswordPage";
 
 function App() {
+    const navigate = useNavigate()
+
+    useEffect(() => {
+        navigate("/loginPage")
+    },[])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Header/>
+        <div className={`main`}>
+            <Routes>
+                <Route path="/loginPage" element={<LoginPage/>} />
+                <Route path="/resetPasswordPage" element={<ResetPasswordPage test={"test123"}/>} />
+            </Routes>
+
+        </div>
+        <Footer/>
     </div>
   );
 }

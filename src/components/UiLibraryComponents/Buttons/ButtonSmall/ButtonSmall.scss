@@ -1,0 +1,31 @@
+
+.button-small {
+  width: 165px;
+  border-radius: 5px;
+  background: var(--main-color);
+  color: var(--white-color);
+  font: var(--normal-font);
+  text-align: center;
+  height: 40px;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.button-small:hover {
+  background: var(--secondary-color);
+}
+.button-small.button-alt {
+  background: var(--secondary-color);
+}
+.button-small.button-alt:hover {
+  background: var(--main-color);
+}
+
+@media (max-width: 600px) {
+  button.button-small.margin-top {
+    margin-top: 15px;
+  }
+}
+
+
