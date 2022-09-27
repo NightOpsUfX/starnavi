@@ -2,6 +2,6 @@
 
 export const SmallImage = ({image}) => {
     return (
-        <img src={image} alt=""/>
+        <img src={image} alt="image"/>
     )
 }

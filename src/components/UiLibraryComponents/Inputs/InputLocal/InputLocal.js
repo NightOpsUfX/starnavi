@@ -39,8 +39,8 @@ export const InputLocal = ({inputType, inputClassList, placeholder, inputValue, 
             onBlur={() => {inputFocusChange(false)}}
         >
             <div className={`input-component__icon-wrapper`}>
-                <img className={`input-component__icon`} src={renderImage(inputIcon)} alt=""/>
-                <img className={`input-component__icon icon-active`} src={renderImage(inputIcon, true)} alt=""/>
+                <img className={`input-component__icon`} src={renderImage(inputIcon)} alt="input Icon"/>
+                <img className={`input-component__icon icon-active`} src={renderImage(inputIcon, true)} alt="input Icon"/>
             </div>
             <input
                 className={`input-component__input-field ${inputClassList}`}

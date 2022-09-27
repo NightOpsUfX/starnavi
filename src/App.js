@@ -23,7 +23,6 @@ function App() {
                 <Route path="/loginPage" element={<LoginPage/>} />
                 <Route path="/resetPasswordPage" element={<ResetPasswordPage test={"test123"}/>} />
             </Routes>
-
         </div>
         <Footer/>
     </div>
