@@ -58,8 +58,8 @@ export const LoginPage = () => {
                                 <SimpleTextInfo simpleTextInfo={"Or connect with social"} />
                             </div>
                             <div className={`loginPage__form-social-buttons`}>
-                                <ButtonSmall buttonText={"Facebook"}/>
-                                <ButtonSmall buttonText={"Google"} classList={"button-alt margin-top"}/>
+                                <ButtonSmall buttonText={"Facebook"} buttonAction={handleClickForm}/>
+                                <ButtonSmall buttonText={"Google"} classList={"button-alt margin-top"} buttonAction={handleClickForm}/>
                             </div>
                         </div>
                     </form>
