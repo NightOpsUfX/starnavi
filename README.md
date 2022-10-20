@@ -1,5 +1,5 @@
 # How To launch the project
-1. Enter https://github.com/NightOpsUfX/railsware.git
+1. Enter https://github.com/NightOpsUfX/railsware/tree/FTL
 2. Click green Code button 
 3. Copy link from field
 4. In your IDE - File - New - Project From Version Control
