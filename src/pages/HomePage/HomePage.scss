@@ -1,0 +1,50 @@
+@import "./src/static/scss/media.scss";
+
+.homePage__main {
+  .homePage__kitties-items-wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+  }
+  .selectComponent {
+    margin-left: 10px;
+    width: 220px;
+  }
+}
+.homePage__main.not-active {
+  pointer-events: none;
+  opacity: 0.95;
+}
+
+@include respond(Big) {
+  div.homePage__main {
+    .homePage__kitties-items-wrapper {
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 15px;
+    }
+  }
+}
+
+@include respond(Medium) {
+  div.homePage__main {
+    .homePage__kitties-items-wrapper {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@include respond(Small) {
+  div.homePage__main {
+    .homePage__kitties-items-wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@include respond(Mobile) {
+  div.homePage__main {
+    .homePage__kitties-items-wrapper {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

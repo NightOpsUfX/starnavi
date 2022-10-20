@@ -1,0 +1,22 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == Mobile {
+    @media (max-width: 480px) {
+      @content;
+    }
+  }
+  @if $breakpoint == Small {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+  @if $breakpoint == Medium {
+    @media (max-width: 991px) {
+      @content;
+    }
+  }
+  @if $breakpoint == Big {
+    @media (max-width: 1199px) {
+      @content;
+    }
+  }
+}

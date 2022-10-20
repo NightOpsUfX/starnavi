@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+h3 {
+  margin: 0 0 10px 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+  margin: 0;
+}
+.main {
+  padding: 15px 0;
+  margin-bottom: 30px;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+  width: 100%;
+}
+.logo-wrapper {
+  width: 90px;
+  height: 96px;
+  cursor: pointer;
+}
+.logo-wrapper img {
+  width: 100%;
+}

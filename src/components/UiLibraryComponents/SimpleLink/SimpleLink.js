@@ -6,7 +6,7 @@ export const SimpleLink = ({navigatePath, linkText}) => {
     const navigate = useNavigate()
 
     const redirectFunction = (navigatePath) => {
-        navigate(`/${navigatePath}`)
+        navigate(`/${navigatePath || ""}`)
     }
 
 
