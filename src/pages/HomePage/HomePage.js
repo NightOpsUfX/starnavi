@@ -7,6 +7,7 @@ import {asyncRequestApi} from "../../redux/KittiesSlice/kitties.thunk";
 import {KittiesItem} from "../../components/KittiesItem/KittiesItem";
 import {LoadingSpinner} from "../../components/UiLibraryComponents/LoadingSpinner/LoadingSpinner";
 import {Select} from "../../components/UiLibraryComponents/Select/Select";
+import {setKittiesListClear} from "../../redux/KittiesSlice/kitties.slice";
 
 export const HomePage = () => {
 
@@ -63,6 +64,7 @@ export const HomePage = () => {
         document.addEventListener('scroll', scrollHandler)
         return function () {
             document.removeEventListener("scroll", scrollHandler)
+            dispatch(setKittiesListClear())
         }
     },[])
 // end scroll

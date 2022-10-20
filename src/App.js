@@ -23,6 +23,7 @@ function App() {
         <div className={`main`}>
             <Routes>
                 <Route path="/" element={<HomePage/>} />
+                <Route path="/railsware" element={<HomePage/>} />
                 <Route path="/loginPage" element={<LoginPage/>} />
                 <Route path="/resetPasswordPage" element={<ResetPasswordPage test={"test123"}/>} />
             </Routes>

@@ -14,7 +14,11 @@ const kittiesSlice = createSlice({
         },
         setKittiesListWithNewParam(state, action) {
             state.kittiesList = action.payload.cats
-            state.kittiesPaginationInfo= action.payload.pagination_info
+            state.kittiesPaginationInfo = action.payload.pagination_info
+        },
+        setKittiesListClear(state) {
+            state.kittiesList = ''
+            state.kittiesPaginationInfo = ''
         },
         setKittiesListNextPage(state, action) {
             state.kittiesListNextPage = action.payload
@@ -23,4 +27,4 @@ const kittiesSlice = createSlice({
 })
 
 export default kittiesSlice.reducer
-export const {setKittiesList, setKittiesListWithNewParam} = kittiesSlice.actions
+export const {setKittiesList, setKittiesListWithNewParam, setKittiesListClear} = kittiesSlice.actions
