@@ -1,14 +1,14 @@
 # How To launch the project
-1. Enter https://github.com/NightOpsUfX/railsware/tree/FTL
-2. Click green Code button 
-3. Copy link from field
-4. In your IDE - File - New - Project From Version Control
-5. Insert link to URL field
-6. Choose project directory
-7. Press Clone button
-8. Optional: Trust project
-9. Enter project folder in terminal
-10. npm i in terminal and wait
-11. npm start in terminal 
-12. Open browser
-
+Enter https://github.com/NightOpsUfX/railsware/tree/FTL
+Click green Code button 
+Copy link from field
+In your IDE - File - New - Project From Version Control
+Insert link to URL field
+Choose project directory
+Press Clone button
+Optional: Trust project
+Switch to branch "FTL" !
+Enter project folder in terminal
+npm i in terminal and wait
+npm start in terminal 
+Open browser
