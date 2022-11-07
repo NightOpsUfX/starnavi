@@ -24,12 +24,6 @@ export const Footer = () => {
                 <li className={`header__links-item`}>
                     {<SimpleLink navigatePath={"starnavi"} linkText={"Game Page"}/>}
                 </li>
-                <li className={`footer__links-item`}>
-                    {<SimpleLink navigatePath={"loginPage"} linkText={"Login Page"}/>}
-                </li>
-                <li className={`footer__links-item`}>
-                    {<SimpleLink navigatePath={"resetPasswordPage"}  linkText={"Reset Password Page"}/>}
-                </li>
             </ul>
         </div>
     )
