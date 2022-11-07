@@ -1,7 +1,7 @@
 
 import  "./ResetPasswordPage.scss"
 import {useState} from "react";
-import {Title} from "../../components/UiLibraryComponents/Title/Title";
+import {PageTitle} from "../../components/UiLibraryComponents/PageTitle/PageTitle";
 import {InputLocal} from "../../components/UiLibraryComponents/Inputs/InputLocal/InputLocal";
 import {SmallImage} from "../../components/UiLibraryComponents/SmallImage/SmallImage";
 import resetPasswordFormImage from "../../assets/images/Forgot-password-illustration.jpg"
@@ -25,7 +25,7 @@ export const ResetPasswordPage = () => {
                 <div className={`resetPasswordPage__image`}>
                     <SmallImage image={resetPasswordFormImage}/>
                 </div>
-                <Title titleText={"Forgot Password"}/>
+                <PageTitle titleText={"Forgot Password"}/>
                 <div className={`resetPasswordPage__form-wrapper-inner`}>
                     <form action="">
                         <div className={`resetPasswordPage__form-inputs-wrapper`}>

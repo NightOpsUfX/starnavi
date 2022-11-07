@@ -3,13 +3,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--white-color);
-
-  .header__links {
-    display: flex;
-    flex-direction: column;
-  }
+  background-color: var(--main-color);
   li {
     list-style: none;
+  }
+  .simple-link {
+    color: var(--white-color);
   }
 }

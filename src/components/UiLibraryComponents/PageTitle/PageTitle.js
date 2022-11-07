@@ -1,6 +1,6 @@
-import "./Title.scss"
+import "./PageTitle.scss"
 
-export const Title = ({titleText}) => {
+export const PageTitle = ({titleText}) => {
     return (
         <h1 className={`page-title`}>{titleText}</h1>
     )

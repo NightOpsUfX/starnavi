@@ -10,11 +10,13 @@
   --light-text-color: #B0B0B0;
   --normal-font: 400 16px Roboto;
   --title-font: 700 36px Roboto;
+  --section-title-font: 700 25px Roboto;
 }
 
 @media (max-width: 600px) {
   :root {
     --normal-font: 400 14px Roboto;
     --title-font: 700 32px Roboto;
+    --section-title-font: 700 28px Roboto;
   }
 }

@@ -1,6 +1,6 @@
 import "./HomePage.scss"
 import {useEffect, useState} from "react";
-import {Title} from "../../components/UiLibraryComponents/Title/Title";
+import {PageTitle} from "../../components/UiLibraryComponents/PageTitle/PageTitle";
 import {SimpleTextInfo} from "../../components/UiLibraryComponents/SimpleTextInfo/SimpleTextInfo";
 import {useDispatch, useSelector} from "react-redux";
 import {asyncRequestApi} from "../../redux/KittiesSlice/kitties.thunk";
@@ -71,7 +71,7 @@ export const HomePage = () => {
 
     return (
         <div className={`homePage__main container ${fetching ? "not-active" : ""}`}>
-            <Title titleText={'Crypto Kitties List'} />
+            <PageTitle titleText={'Crypto Kitties List'} />
             <SimpleTextInfo simpleTextInfo={`Sort by:`}/>
             <Select valuesArray={selectValuesArray} selectAction={changeSortParameter} />
             {
@@ -79,9 +79,9 @@ export const HomePage = () => {
                     ?
                     <div className={`homePage__kitties-items-wrapper`}>
                         {
-                            kittiesList  && kittiesList.map((item) => {
+                            kittiesList  && kittiesList.map((item, index) => {
                                 return (
-                                    <KittiesItem item={item}/>
+                                    <KittiesItem item={item} key={index}/>
                                 )
                             })
                         }

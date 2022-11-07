@@ -1,0 +1,13 @@
+.gameCell {
+  border: 1px solid var(--input-borders-color);
+  width: 45px;
+  height: 45px;
+}
+.gameCell.active {
+  background: var(--main-color);
+}
+.gameCell.small-cell {
+  width: 25px;
+  height: 25px;
+}
+

@@ -1,6 +1,6 @@
 import  "./LoginPage.scss"
 import {useState} from "react";
-import {Title} from "../../components/UiLibraryComponents/Title/Title";
+import {PageTitle} from "../../components/UiLibraryComponents/PageTitle/PageTitle";
 import {InputLocal} from "../../components/UiLibraryComponents/Inputs/InputLocal/InputLocal";
 import {SmallImage} from "../../components/UiLibraryComponents/SmallImage/SmallImage";
 import loginFormImage from "../../assets/images/Login-illustration.jpg"
@@ -26,7 +26,7 @@ export const LoginPage = () => {
                 <div className={`loginPage__image`}>
                     <SmallImage image={loginFormImage}/>
                 </div>
-                <Title titleText={"Welcome Back!"}/>
+                <PageTitle titleText={"Welcome Back!"}/>
                 <div className={`loginPage__form-wrapper-inner`}>
                     <form action="">
                         <div className={`loginPage__form-inputs-wrapper`}>

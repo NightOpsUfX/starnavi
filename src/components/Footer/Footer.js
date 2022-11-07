@@ -1,9 +1,7 @@
-
-
 import {SimpleLink} from "../UiLibraryComponents/SimpleLink/SimpleLink";
 import "../Footer/Footer.scss"
 import { useNavigate } from 'react-router-dom';
-import logoImage from "../../assets/images/logo-img.png";
+import logoImage from "../../assets/images/starnavilogo.png";
 
 export const Footer = () => {
     const navigate = useNavigate()
@@ -21,7 +19,10 @@ export const Footer = () => {
             </div>
             <ul className={`footer__links`}>
                 <li className={`footer__links-item`}>
-                    {<SimpleLink navigatePath={"railsware"} linkText={"Home Page Page"}/>}
+                    {<SimpleLink navigatePath={"railsware"} linkText={"Home Page"}/>}
+                </li>
+                <li className={`header__links-item`}>
+                    {<SimpleLink navigatePath={"starnavi"} linkText={"Game Page"}/>}
                 </li>
                 <li className={`footer__links-item`}>
                     {<SimpleLink navigatePath={"loginPage"} linkText={"Login Page"}/>}
