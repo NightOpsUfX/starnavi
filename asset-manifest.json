@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/starnavi/static/css/main.a3f3450e.css",
+    "main.js": "/starnavi/static/js/main.5acbea3e.js",
+    "static/js/787.9f6dd2d0.chunk.js": "/starnavi/static/js/787.9f6dd2d0.chunk.js",
+    "index.html": "/starnavi/index.html",
+    "main.a3f3450e.css.map": "/starnavi/static/css/main.a3f3450e.css.map",
+    "main.5acbea3e.js.map": "/starnavi/static/js/main.5acbea3e.js.map",
+    "787.9f6dd2d0.chunk.js.map": "/starnavi/static/js/787.9f6dd2d0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a3f3450e.css",
+    "static/js/main.5acbea3e.js"
+  ]
+}
