@@ -2,6 +2,7 @@ import  "./GameCell.scss"
 import {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {setGameLog} from "../../redux/GameLogSlice/gamelog.slice";
+import {setSelectedGameType} from "../../redux/GameTypeSlice/gametype.slice";
 
 export const GameCell = ({item}) => {
 // states & variables
@@ -11,22 +12,22 @@ export const GameCell = ({item}) => {
     const selectedGameType = state && state.gameTypeStore && state.gameTypeStore.selectedGameType
 // end states & variables
 
-// reset cells
+// reset this cell if game type has been changed
     useEffect(() => {
         setCellActive(false)
     }, [selectedGameType])
-// end reset cells
+// end this reset cell if game type has been changed
 
-// change Cell Status
+// change this Cell Status
     const changeCellStatus = () => {
         setCellActive( prevState => !prevState)
         dispatch(setGameLog(item))
     }
-// change Cell Status
+// change this Cell Status
 
     return (
         <div
-            className={`gameCell ${cellActive ? "active" : ""}  ${selectedGameType > 15 ? "small-cell" : ""}`}
+            className={`gameCell ${cellActive ? "active" : ""} ${selectedGameType === 15 ? "medium-cell" : ""}  ${selectedGameType > 15 ? "small-cell" : ""}`}
             onMouseOver={() => changeCellStatus()}
             row={item.row}
             column={item.column}

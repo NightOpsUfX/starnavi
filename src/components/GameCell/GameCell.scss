@@ -6,6 +6,10 @@
 .gameCell.active {
   background: var(--main-color);
 }
+.gameCell.medium-cell {
+  width: 35px;
+  height: 35px;
+}
 .gameCell.small-cell {
   width: 25px;
   height: 25px;

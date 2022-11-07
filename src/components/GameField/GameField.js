@@ -1,10 +1,13 @@
 import  "./GameField.scss"
 import {useEffect, useState} from "react";
 import {GameCell} from "../GameCell/GameCell";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
+import {setSelectedGameType} from "../../redux/GameTypeSlice/gametype.slice";
+import {setGameLog} from "../../redux/GameLogSlice/gamelog.slice";
 
 export const GameField = () => {
 // states & variables
+    const dispatch = useDispatch()
     const [gameTypeArray, setGameTypeArray ] = useState([]);
     const state = useSelector(state => state)
     const selectedGameType = state && state.gameTypeStore && state.gameTypeStore.selectedGameType

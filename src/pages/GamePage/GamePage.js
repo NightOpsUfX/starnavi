@@ -8,6 +8,7 @@ import {GameField} from "../../components/GameField/GameField";
 import {GameLog} from "../../components/GameLog/GameLog";
 import {SectionTitle} from "../../components/UiLibraryComponents/SectionTitle/SectionTitle";
 import {setSelectedGameType} from "../../redux/GameTypeSlice/gametype.slice";
+import {setGameLog} from "../../redux/GameLogSlice/gamelog.slice";
 
 export const GamePage = () => {
 // states & variables
@@ -35,6 +36,15 @@ export const GamePage = () => {
         setActivateGameField(true)
     }
 // end start game
+
+// reset game log, field size and cells  if another page was open
+    useEffect(() => {
+        return () => {
+            dispatch(setGameLog(''))
+            dispatch(setSelectedGameType(5))
+        }
+    }, [])
+// end reset game log, field size  and cells if another page was open
 
     return (
         <div className={`gamePage__main`}>

@@ -13,6 +13,8 @@ export const GameLog = ( ) => {
 // reset game log list
     useEffect(() => {
         setGameLogList('')
+
+        return
     }, [selectedGameType])
 // end reset game log list
 
