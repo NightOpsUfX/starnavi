@@ -16,10 +16,9 @@ function App() {
         <Header/>
         <div className={`main`}>
             <Routes>
-                <Route path="/" element={<HomePage/>} />
+                <Route path="/home" element={<HomePage/>} />
                 <Route path="/gamepage" element={<GamePage/>} />
                 <Route path="/starnavi" element={<GamePage/>} />
-                <Route path="/railsware" element={<HomePage/>} />
             </Routes>
         </div>
         <Footer/>

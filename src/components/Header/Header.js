@@ -8,7 +8,7 @@ export const Header = () => {
     const navigate = useNavigate()
 
     const handleClickOnLogo = () => {
-        navigate(`/railsware`)
+        navigate(`/home`)
     }
 
     return (
@@ -20,7 +20,7 @@ export const Header = () => {
             </div>
            <ul className={`header__links`}>
                <li className={`header__links-item`}>
-                   {<SimpleLink navigatePath={"railsware"} linkText={"Home Page"}/>}
+                   {<SimpleLink navigatePath={"home"} linkText={"Home Page"}/>}
                </li>
                <li className={`header__links-item`}>
                    {<SimpleLink navigatePath={"starnavi"} linkText={"Game Page"}/>}
